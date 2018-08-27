@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang = "en" ng-app= "ToDo">
-    <head>
+<head>
         <meta charset="UTF-8">
-        <title>ToDo</title>
+        <title>todo</title>
         <style>
         .done{text-decoration: line-through;color:#ccc;}
         </style>
-     </head>
+</head>
  <body>
 
     <div ng-controller="todoController">
@@ -39,12 +39,12 @@
 
                 ];
         
-                $scope.addtodo =function(){
+                $scope.addToDo =function(){
                         $scope.todos.push({'title': $scope.newToDo, 'done':false})
                         $scope.newTodo=''
 
+                    }
                     
-                }
                 $scope.clearCompleted = function(){
                         $scope.todos = $scope.todos.filter(function(item){
                             return !item.done
